@@ -17,12 +17,11 @@
 
 .contact__container {
     background-color: var(--color-primary-bg3);
-    padding: 4rem 0;
+    padding: 1rem 0;
     display: grid;
-    /* color: var(--color-white-lt); */
     grid-template-columns: 40% 60%;
-    gap: 3rem;
-    height:80vh;
+    gap: 5rem;
+    height:70vh;
     border-radius: 1rem;
  
 }
@@ -34,17 +33,18 @@
     padding: 2rem;
     border-radius: 1.8rem;
     position: relative;
-    left: 2rem;
-    bottom: 14rem;
+    left: 4rem;
+    bottom: 10rem;
 
 }
 
 .aside__img{
-    max-width: 100%;
+    max-width: 90%;
+    text-align: center;
 }
 
 .contact-img {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 50%;
     height: fit-content;
 }
@@ -204,20 +204,20 @@ form .btn {
 
 .arr-up{
     float: right;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.8rem;
     border: none;
     right: 5px;
     position: absolute;
-    border-radius: 50%;
+    border-radius: 5px;
     padding: .5rem 1rem;
     scroll-behavior: smooth;
-    box-shadow: 1px 3px 2px rgb(0, 0, 0);
-    background-color: var(--color-text);
+    box-shadow: 1px 3px 2px var(--color-text);
+    background-color: var(--color-primary-bg);
 }
 
 .arr-up a {
-    color: var(--color-primary-bg);
+    color: var(--color-primary-btn);
 }
 
 
@@ -225,7 +225,7 @@ form .btn {
 
 footer{
     background-color: var(--color-primary-btn);
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
     text-align: center;
 }

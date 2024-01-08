@@ -81,7 +81,7 @@ section{
 
 section .animate{
   filter: blur(5px);
-  transition: 1.8s;
+  transition: 1s;
   opacity: 0;
 
 }
@@ -101,7 +101,7 @@ section h2 {
 .row {
   max-width: 990;
   margin: 0 auto;
-  padding:  4rem;
+  padding:  4rem 1rem;
 }
 
 /* styling nav */
@@ -123,7 +123,6 @@ section h2 {
   height: 3rem;
   position: fixed;
   top: 0;
-  padding: 0 2rem;
 }
 
 .open-icon {
@@ -176,7 +175,7 @@ section h2 {
 /* styling hero section */
 
 .h-container {
-  padding: 1.8rem 0;
+  padding: .8rem 0;
 }
 
 .hero-sec .animate{

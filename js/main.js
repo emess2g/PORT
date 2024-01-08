@@ -25,22 +25,30 @@ window.onscroll = () => {
 }
 
 // Dark mode script
+// const isDark = localStorage.getItem("dark-theme") === ;
+const darkIcon = document.querySelector(".dark-theme");
+console.log(localStorage.getItem("dark-mode", darkIcon));
 
-const darkIcon = document.querySelector(".themeIcon");
+
+
 darkIcon.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    darkIcon.classList = "fa-solid fa-sun";
+    darkIcon.classList.add('dark-theme') = "fa-solid fa-sun";
+    localStorage.setItem("dark-mode", "dark-theme");
   } else {
-    darkIcon.classList = "fa-solid fa-moon";
+    darkIcon.classList.remove('dark-theme') = "fa-solid fa-moon";
+    localStorage.setItem("dark-mode", "dark-theme");
   }
 });
+
+
 
 //  darkIcon.onclick = function () {
 //     document.body.classList.toggle('dark-theme');
 //  }
 
-//
+
 const menu = document.querySelector(".menu-links");
 const closeBtn = document.querySelector(".close-btn");
 const openBtn = document.querySelector(".open-icon");
@@ -59,12 +67,17 @@ function closeNav() {
   openBtn.style.display = "inline-block";
 }
 
-// const navLinks = document.querySelector('.menu-links a');
-// navLinks.forEach(navLinks => {
-//   navLinks.addEventListener('click', () => {
+function hideNavOnClick(){
+  if(window.innerWidth <= 768){
+    menu.style.display = "none";
+    closeBtn.style.display = "none";  
+    openBtn.style.display = "inline-block";
+  }
+}
 
-//   })
-// })
+
+menu.addEventListener('click', (hideNavOnClick));
+
 
 const text = "connect let build quality projects together";
 const typingSpeed = 100;
@@ -142,7 +155,7 @@ let skillsHTML = "";
 
 skills.forEach((skill) => {
   skillsHTML += `
-    <div class="skill-card animate df">
+    <div class="skill-card animate df ">
          ${skill.skillImg}
         <div class="skill-name-container df">
             <div class="tooltip">
@@ -410,15 +423,12 @@ var swiper = new Swiper(".project-wrapper", {
 const faqs = [
   {
     icon: `<i class="fa-solid fa-plus"></i>`,
-    question: `Are you willing to work Remote`,
-    answer: `  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Ipsa maiores accusamus error ea a molestiae, adipisci nemo pariatur totam dicta! Tempora,
-        consectetur. Laborum,
-        aliquid rerum ipsam odit aspernatur quos cupiditate!`,
+    question: `How many years of experience do you have?`,
+    answer: ` I have been in this for 3 years now. However i have actively been doing it for 2 years!`,
   },
   {
     icon: `<i class="fa-solid fa-plus"></i>`,
-    question: `Are you willing to work Remote`,
+    question: `Are you willing to work Remote ?`,
     answer: `  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Ipsa maiores accusamus error ea a molestiae, adipisci nemo pariatur totam dicta! Tempora,
         consectetur. Laborum,
@@ -513,11 +523,9 @@ const vMoreContent = document.querySelector(".js-btn-content");
 // const vLessBtn= document.querySelector('.js-btn-less');
 function displayMore() {
   vMore.addEventListener("click", () => {
-    if (vMore.classList.toggle("open") === true) {
-      vMoreContent.style.display = "none";
-    } else {
-      vMoreContent.style.display = "block";
-    }
+    // update from if statement to ternary operator
+     (vMore.classList.toggle("open") ) ?   vMoreContent.style.display = "none" 
+       :  vMoreContent.style.display = "block"; 
   });
 }
 
