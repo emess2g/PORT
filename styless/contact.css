@@ -44,6 +44,7 @@
 }
 
 .contact-img {
+    display: none;
     max-width: 90%;
     border-radius: 50%;
     height: fit-content;
