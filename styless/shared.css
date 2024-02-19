@@ -137,16 +137,29 @@ section h2 {
 .menu-links {
   display: flex;
   gap: 1.2rem;
+  justify-content: space-around;
   align-items: center;
+  gap: 2.5rem;
+
 }
 
+.menu-container{
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+ 
+
 .menu-links a {
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+
 
 }
 
 .menu-links a:hover {
-  padding-bottom: .1rem;
+  text-decoration: underline;
 }
 
 .nav-container {
