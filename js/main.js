@@ -222,7 +222,7 @@ const projects = [
     `,
   },
   {
-    projectLink: `href="https://github.com/emess2g/Twitter-Clone.git"`,
+    projectLink: `href="https://emessrentals.netlify.app/"`,
     projectName: `Car Rental Website`,
     projectImg: `<img class="project-img" src="./images/car-rental.png" alt="">`,
     tools: {
