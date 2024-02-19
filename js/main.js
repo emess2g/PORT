@@ -177,6 +177,7 @@ document.querySelector(".js-skill-container").innerHTML = skillsHTML;
 const projects = [
   {
     projectLink: `href="https://github.com/emess2g/Twitter-Clone.git"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `X(formerly Twitter) Clone`,
     projectImg: `<img class="project-img" src="./images/x-clone.png" alt="">`,
     tools: {
@@ -200,6 +201,7 @@ const projects = [
   },
   {
     projectLink: `href="https://github.com/emess2g/Twitter-Clone.git"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Educational Website`,
     projectImg: `<img class="project-img" src="./images/sch-web.png" alt="">`,
     tools: {
@@ -223,6 +225,7 @@ const projects = [
   },
   {
     projectLink: `href="https://emessrentals.netlify.app/"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Car Rental Website`,
     projectImg: `<img class="project-img" src="./images/car-rental.png" alt="">`,
     tools: {
@@ -246,6 +249,7 @@ const projects = [
   },
   {
     projectLink: `href="https://github.com/emess2g/Youtube-Clone.git"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Youtube Clone`,
     projectImg: `<img class="project-img" src="./images/yt-clone.png" alt="">`,
     tools: {
@@ -269,6 +273,7 @@ const projects = [
   },
   {
     projectLink: `href="https://github.com/emess2g/donation-page"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Donation Website`,
     projectImg: `<img class="project-img" src="./images/donation.png" alt="">`,
     tools: {
@@ -293,6 +298,7 @@ const projects = [
   },
   {
     projectLink: `href="https://github.com/emess2g/rock-paper-scissor-game"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Rock Paper Scissor `,
     projectImg: `<img class="project-img" src="./images/rps-game.png" alt="">`,
     tools: {
@@ -317,6 +323,7 @@ const projects = [
   },
   {
     projectLink: `href="https://github.com/emess2g/Twitter-Clone.git"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Coin Flip Game`,
     projectImg: `<img class="project-img" src="./images/coinflip.png" alt="">`,
     tools: {
@@ -340,6 +347,7 @@ const projects = [
   },
   {
     projectLink: `href="https://github.com/emess2g/Twitter-Clone.git"`,
+    sourceCode : `href="https://github.com/emess2g/Twitter-Clone.git"`,
     projectName: `Calculator`,
     projectImg: `<img class="project-img" src="./images/calculator.png" alt="">`,
     tools: {
@@ -370,7 +378,7 @@ projects.forEach((projects) => {
    
        
         <div class="project-card swiper-slide ">
-        <a ${projects.projectLink}>
+
             ${projects.projectImg}
             <h3 class="proj-title">${projects.projectName}</h3>
             <div class="tools df">
@@ -379,8 +387,13 @@ projects.forEach((projects) => {
             ${projects.tools.git}
             ${projects.tools.react}
             </div>
+            <div class="projects-links-container">
+            <button class="links-btn"> <a  ${projects.projectLink} > Preview Site </a> </button>
+            <button class="links-btn"> <a  ${projects.sourceCode} > Source Code </a> </button> 
+            </div>
+          
             ${projects.projectDetails}
-            </a>
+
         </div>
        
    

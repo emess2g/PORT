@@ -290,6 +290,18 @@
     color: var(--color-blueviolet);
 }
 
+.projects-links-container{
+    display: flex;
+    margin: .5rem 0;
+    gap: .3rem;
+}
+
+.links-btn{
+    padding:.5rem 1rem;
+    background-color: transparent;
+    border-radius: .3rem;
+    border:1px solid;
+}
 
 
 .swiper-navBtn{
